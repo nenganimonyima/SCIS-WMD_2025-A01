@@ -1,0 +1,118 @@
+/* ===== GLOBAL STYLES ===== */
+:root {
+  --bs-primary: #1B263B; /* Dark blue */
+  --bs-warning: #D4A017; /* Gold */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--bs-primary);
+}
+
+/* ===== COMPONENT STYLES ===== */
+/* 1. Hero Section */
+.hero {
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  background-blend-mode: overlay;
+  min-height: 60vh;
+}
+
+/* 2. Cards & Content Blocks */
+.content-card {
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.content-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 3. Buttons */
+.btn-warning {
+  background-color: var(--bs-warning);
+  border: none;
+  font-weight: bold;
+}
+.btn-warning:hover {
+  background-color: white;
+  color: var(--bs-primary);
+}
+
+/* 4. Images */
+.content-image {
+  border: 3px solid var(--bs-warning);
+  border-radius: 8px;
+}
+
+/* 5. Contact Form */
+.contact-form .form-control,
+.contact-form .form-select {
+  border: 1px solid var(--bs-primary);
+  padding: 12px;
+}
+.contact-form textarea {
+  min-height: 180px;
+}
+
+/* 6. Map Container */
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--bs-warning);
+}
+
+/* 7. Social Icons */
+.socials a {
+  transition: all 0.3s ease;
+}
+.socials a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* 8. Value List Items (About Page) */
+.value-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* About Page */
+.lead-highlight {
+  color: var(--bs-warning);
+  font-weight: bold;
+}
+
+.donation-amount .input-group-text {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+.event-date {
+  color: var(--bs-warning);
+  font-weight: bold;
+}
+
+.sermon-card {
+    transition: transform 0.3s ease;
+}
+.sermon-card:hover {
+    transform: translateY(-5px);
+}
+
+video::-webkit-media-controls {
+    background: rgba(0,0,0,0.5);
+}
+
+.page-item.active .page-link {
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+    color: white;
+}
+
+.sermon-item {
+    display: none;
+}
+.sermon-item.active {
+    display: block;
+}
+
